@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
+    <script type="text/javascript" src="../javascript/formvalidation.js"></script>
 </head>
 
 <body>
@@ -30,17 +30,19 @@
             <div>
                 <label class="label text" for="name">Full Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Enter Your name.." required>
+                <error-output class="text-error" for="name"></error-output>
             </div>
             <br>
             <div>
                 <label class="label text" for="phone">Phone Number</label><br>
                 <input class="input" type="text" id="phone" name="phone" placeholder="Enter Your Phone No..." required>
+                <error-output class="phone-error" for="phone"></error-output>
             </div>
             <br>
             <div>
                 <label class="label text" for="address">Address:</label>
-                <textarea class="input" id="address" name="address" placeholder="Enter Your Address..."
-                    required></textarea>
+                <textarea class="input" id="address" name="address" placeholder="Enter Your Address..." required></textarea>
+                <error-output class="address-error" for="address"></error-output>
             </div>
             <br>
             <div class="row-content">
@@ -48,8 +50,8 @@
                     <label class="label text" for="city">City:</label>
                     <select name="city" id="city" required>
                         <option value='' selected='selected'>Select City</option>
-                        <option value="Nashik">Nashik</option>
-                        <option value="Ujjain">Ujjain</option>
+                        <option value="Faridabad">Faridabad</option>
+                        <option value="Delhi">Delhi</option>
                         <option value="Ambala">Ambala</option>
                     </select>
                 </div>
@@ -58,8 +60,8 @@
                     <label class="label text" for="state">State:</label>
                     <select name="state" id="state" required>
                         <option value='' selected='selected'>Select State</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="MadhyaPradesh">MadhyaPradesh</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Delhi">Delhi</option>
                         <option value="Punjab">Punjab</option>
                     </select>
                 </div>
