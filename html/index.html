@@ -13,14 +13,64 @@
 <body>
     <header class="header-text">
         <div class="logo-content">
-            <img src="../assets/icons/addressbook.png" alt="logo">
+            <img src="../assets/adressbookimage.png" alt="logo">
             <div>
                 <span class="add-text">ADDRESS</span><br>
                 <span class="book-text">BOOK</span>
             </div>
         </div>
     </header>
+    <header class="heading">
+        Person Address Book
+        <span class="close">&times;</span>
+    </header>
 
+    <div class="">
+        <form class="form">
+            <div>
+                <label class="label text" for="name">Full Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Enter Your name.." required>
+            </div>
+            <br>
+            <div>
+                <label class="label text" for="phone">Phone Number</label><br>
+                <input class="input" type="text" id="phone" name="phone" placeholder="Enter Your Phone No..." required>
+            </div>
+            <br>
+            <div>
+                <label class="label text" for="address">Address:</label>
+                <textarea class="input" id="address" name="address" placeholder="Enter Your Address..."
+                    required></textarea>
+            </div>
+            <br>
+            <div class="row-content">
+                <div>
+                    <label class="label text" for="city">City:</label>
+                    <select name="city" id="city" required>
+                        <option value='' selected='selected'>Select City</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Ujjain">Ujjain</option>
+                        <option value="Ambala">Ambala</option>
+                    </select>
+                </div>
+                &nbsp;&nbsp;
+                <div>
+                    <label class="label text" for="state">State:</label>
+                    <select name="state" id="state" required>
+                        <option value='' selected='selected'>Select State</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="MadhyaPradesh">MadhyaPradesh</option>
+                        <option value="Punjab">Punjab</option>
+                    </select>
+                </div>
+                &nbsp;&nbsp;
+                <div>
+                    <label class="label text" for="zip">Zip Code:</label>
+                    <input class="input" type="text" id="zipcode" name="zipcode" placeholder=" " required>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
