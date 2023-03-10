@@ -37,3 +37,11 @@ function validatingInputs() {
         }
     });
 }
+
+const save = () => {
+    alert("Save button");
+}
+
+const reset = () => {
+    alert("Reset button");
+}
